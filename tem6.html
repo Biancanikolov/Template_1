@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup-modal</title>
+    <link rel="stylesheet" href="css/tem6style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mainImage">
+        <div class="overlay"></div>
+        <div class="mainContent">
+            <img src="https://image.flaticon.com/icons/png/512/433/433909.png" alt="spaceandstuff">
+            <div class="introTxt">
+                <h3>NEW DIMENSION</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, unde!</p>
+            </div>
+            <!-- Trigger/Open modal -->
+            <div class="btnHolder">
+                <button id="spaceBtn" class="btnSpace">Space</button>
+            </div>
+
+            <!-- The Modals -->
+            <div id="spaceModal" class="modalSpace">
+                <!-- Modal Content -->
+                <div class="spaceModalContent">
+                    <h1>This is some awesome Space text!</h1>
+                    <hr class="line">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, labore sequi? Illo nesciunt iste cumque quae unde, ducimus tempora, magni molestiae cupiditate, dignissimos placeat porro. Tempora rerum nam, blanditiis aliquid cumque odit et voluptates placeat minus ea id dolor soluta saepe quod beatae facere sed deleniti iure. Expedita, placeat ad.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus incidunt odio ad eius voluptatum deleniti velit dolores adipisci?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Get the modal
+        var modal = document.getElementById("spaceModal");
+        
+        //Get the button that opens the modal
+        var btn = document.getElementById("spaceBtn");
+
+        //When click on btn - open modal
+        btn.onclick = function() {
+            modal.style.display="block";
+        }
+
+        //When the clicked outside of the modal - close
+        window.onclick=function(event) {
+            if (event.target==modal) {
+                modal.style.display="none";
+            }
+        }
+
+    </script>
+
+        
+
+
+
+</body>
+</html>
